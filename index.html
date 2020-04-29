@@ -5,7 +5,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
         <title>Morris Ma's Website</title>
 
-
+        <!--Can link to google font later-->
+        <link rel="stylesheet" href="style.css"> 
     </head>
 <body>
     <header> 
@@ -17,10 +18,10 @@
         </button>
         <nav class="nav">
             <ul class="nav__list">
-                <li class="nav__item"><a href="#" class="nav__link">Home</a></li>
-                <li class="nav__item"><a href="#" class="nav__link">About Me</a></li>
-                <li class="nav__item"><a href="#" class="nav__link">Work Experience</a></li>
-                <li class="nav__item"><a href="#" class="nav__link">Projects</a></li>
+                <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
+                <li class="nav__item"><a href="#about" class="nav__link">About Me</a></li>
+                <li class="nav__item"><a href="#work_experience" class="nav__link">Work Experience</a></li>
+                <li class="nav__item"><a href="#projects" class="nav__link">Projects</a></li>
             </ul>
         </nav>
     </header>
@@ -29,37 +30,80 @@
         <hl class="section__title section__title--intro">
             Hi! I am <strong>Morris Ma</strong>
         </hl>
-        <p class="section__subtitle section__subtitle--intro">front-end dev</p>
+        <p class="section__subtitle section__subtitle--intro">Uwaterloo Mechatronics Engineering</p>
         <!--Put my profile picture HERE--> 
+        <!--Put my Resume here (Or have a separate section for it-->
     </section>
 
     <!--About Me-->
     <section class="about-me" id="about">
-        <h2 class="section__title section__title--about"About Me></h2>
-    </section>
+        <h2 class="section__title section__title--about">About Me</h2>
+        <p class="section__subtitle section__subtitle--about">Gong xi fa cai</p>
 
+        <div> 
+            <p>Breif introduction about me</p>
+        </div>
+        <!--Put another image of me here-->
+    </section>
 
      <!--Projects-->
      <section class="projects" id="projects">
         <h2 class="section__title section__title--projects"My Projects></h2>
+
         <!--3 columns design-->
         <div class="projects">
             <div class='project'>
-                <h3></h3>
-                <p></p>
+                <h3>Space Invader Game</h3>
+                <p>This is a game that I developed to learn Python</p>
             </div> <!--/ service-->
 
             <div class='project'>
-                <h3></h3>
-                <p></p>
+                <h3>Personal Portfolio</h3>
+                <p>HTML, CSS, JavaScript</p>
             </div> <!--/ service-->
 
             <div class='project'>
-                <h3></h3>
-                <p></p>
+                <h3>TensorFlow Tutorial</h3>
+                <p>Brief introduction to Machine Learning</p>
             </div> <!--/ service-->
         </div> <!--/ services-->
-        <a href="#link to github" class="btn">My Github</a>
+        <a href="https://github.com/MorisMa18" class="GitHub">Project Details</a>
     </section>
+
+    <!--Work Experience-->
+    <section class="my-work" id="work_experience">
+        <h2 class="section__title">My Work Experience</h2>
+        <p class="section__subtitle"></p>
+
+        <div class="Job_Descriptions">
+            <div class='job1'>
+                <h3>IT Support Technician @SunLife</h3>
+                <p>2019/02 ~ 2019/04</p>
+            </div> <!--/ job1-->
+
+            <div class='job2'>
+                <h3>QA Engineer @MappedIn Inc.</h3>
+                <p>2019/09 ~ 2019/12</p>
+            </div> <!--/ job2-->
+
+            <div class='job3'>
+                <h3>Youth Program Volunteer @SFU</h3>
+                <p>2017/07 ~ 2018/08</p>
+            </div> <!--/ job3-->
+
+        </div> <!--/ Job_Descriptions-->
+    </section>
+
+    <!--Footer-->
+    <footer> 
+        <!--Personal Email Address-->
+        <a href="mo396720@gmail.com" class="footer-link">Personal Email</a>
+        <!--School Email Address-->
+        <a href="wmma@uwaterloo.ca" class="footer-link">School Email</a>
+        <!--LinkedIn-->
+        <a href="https://www.linkedin.com/in/morris-ma/" class="footer-link">My LinkedIn</a>
+        <!--GitHub-->
+        <a href="https://github.com/MorisMa18" class="GitHub">My Github</a>
+    </footer>
 </body>
 </html> 
