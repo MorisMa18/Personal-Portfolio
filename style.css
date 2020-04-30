@@ -1,10 +1,12 @@
 *,
 *::before,
 *::after { 
-    box-sizing: bnorder-box; 
+    box-sizing: border-box; 
 }
 
 /* Custom Properties */
+
+/* General */
 :root {
     /* Font */ 
     --ff-primary: 'Source Sans Pro', sans-serif;  
@@ -29,7 +31,7 @@
     --bs: 0.25em 0.25em 0.75em rgba(0,0,0,0.25); 
 }
 
-/* For differnet screen size */ 
+/* For differnet screen size -General*/ 
 @media (min-width: 800px) {
     :root {
         --fs-h1: 4.5rem; 
@@ -39,7 +41,7 @@
     }
 }
 
-/* General Style */ 
+/* General Body Style */ 
 body {
     background: var(--clr-light); 
     color: var(--clr-dark);
@@ -55,7 +57,7 @@ section {
 
 img {
     display: block; 
-    max-width: 100%; 
+    max-width: 85%; 
 }
 
 strong { font-weight: var(--fw-bold);}
@@ -72,33 +74,37 @@ h1 { font-size: var(--fs-h1)};
 h2 { font-size: var(--fs-h2)};
 h3 { font-size: var(--fs-h3)};
 
+/* section__titles -General */ 
 .section__title {
     margin-bottom: 0.25rem; 
 }
 
+/* section__titles--intro - General */ 
 .section__title--intro {
-   font-weight: var(--fw-reg); 
+    font-size: var(--fs-h1);
+    font-weight: var(--fw-reg); 
 }
 
+/* section__titles--intro strong - General */
 .section__title--intro strong {
     display: block; 
+    background: var(--clr-accent); 
+    padding: 0em 1em; 
+    font-family: var(--ff-secondary);
+    margin-bottom: 1em;
 }
 
+/* section__subtitles - General */
 .section__subtitle {
     margin: 0; 
     font-size: var(--fs-h3);
 }
 
+/* section__subtitles--intro - General */
 .section__subtitle--intro {
 }
 
-.section__subtitle--about {
-    background: var(--clr-accent); 
-    padding: 0.25em 1em; 
-    font-family: var(--ff-secondary);
-    margin-bottom: 1em; 
-}
-/* Header */ 
+/* Header - General */ 
 nav {display: none; }
 
 /* Intro section */ 
@@ -110,6 +116,7 @@ nav {display: none; }
     box-shadow: var(--bs); 
 }
 
+/* intro section when the window size is adjusted */
 @media (min-width: 600px) {
     .intro {
         display: grid; 
@@ -139,4 +146,21 @@ nav {display: none; }
         width: calc(100% + 1.5em); 
 
     }
+}
+/* My projects section */ 
+.projects { 
+    background-color: var(--clr-dark);
+    /* Put background image here (coding related)*/ 
+    background-size: cover;
+    background-blend-mode: multiply;
+    color: var(--clr-light);
+}
+
+/* About Section */ 
+.about-me {
+    background-color: var(--clr-dark);
+    background-image: url(../images/taipei_skyline.jpg); 
+    background-size: cover;
+    background-blend-mode: multiply; 
+    color: var(--clr-light); 
 }
