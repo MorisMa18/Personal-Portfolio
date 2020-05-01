@@ -1,45 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-        <title>Morris's Portfolio</title>
 
-        <!--Can link to google font later-->
-        <link rel="stylesheet" href="style.css"> 
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Morris's Portfolio</title>
+
+    <!--Can link to google font later-->
+    <link rel="stylesheet" href="style.css">
+</head>
 
 <body>
     <!-- Header -->
-    <header> 
+    <header>
 
         <!-- CSS style for animated hamburger icon -->
-        <style> 
-        .logo {
-            display: inline-block;
-            cursor: pointer; 
-            margin-left: 1em;
-        }
+        <style>
+            .logo {
+                display: inline-block;
+                cursor: pointer;
+                margin-left: 1em;
+            }
 
-        .bar1, .bar2, .bar3 {
-            width: 35px;
-            height: 5px;
-            background-color: #333;
-            margin: 6px 0;
-            transition: 0.2s;
-        }
+            .bar1,
+            .bar2,
+            .bar3 {
+                width: 35px;
+                height: 5px;
+                background-color: #333;
+                margin: 6px 0;
+                transition: 0.2s;
+            }
 
-        .change .bar1 {
-            -webkit-transform: rotate(-45deg) translate(-9px, 6px);
-            transform: rotate(-45deg) translate(-9px, 6px);
-        }
+            .change .bar1 {
+                -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+                transform: rotate(-45deg) translate(-9px, 6px);
+            }
 
-        .change .bar2 {opacity: 0;}
+            .change .bar2 {
+                opacity: 0;
+            }
 
-        .change .bar3 {
-            -webkit-transform: rotate(45deg) translate(-8px, -8px);
-            transform: rotate(45deg) translate(-8px, -8px);
-        }
+            .change .bar3 {
+                -webkit-transform: rotate(45deg) translate(-8px, -8px);
+                transform: rotate(45deg) translate(-8px, -8px);
+            }
         </style>
 
         <!-- HTML for animated hamburger icon -->
@@ -50,10 +55,10 @@
         </div>
 
         <!-- JavaScript code for animated hambuger icon -->
-        <script> 
-        function  trigger(x) {
-            x.classList.toggle("change"); 
-        }
+        <script>
+            function trigger(x) {
+                x.classList.toggle("change");
+            }
         </script>
 
         <nav class="nav">
@@ -72,78 +77,104 @@
             Hi! I am <strong>Morris Ma</strong>
         </hl>
         <p class="section__subtitle section__subtitle--intro"></p>
-        <img src="images/profile pic.jpg" alt="Profile Picture" class="intro__img"> 
-        <!--Put my Resume here (Or have a separate section for it-->
+        <img src="images/profile pic.jpg" alt="Profile Picture" class="intro__img">
     </section>
 
     <!--About Me-->
     <section class="about-me" id="about">
         <h2 class="section__title section__title--about">About Me</h2>
         <p class="section__subtitle section__subtitle--about">UWaterloo Mechatronics Engineering</p>
-
-        <div> 
-            <p>Breif introduction about me</p>
+        <div class="about-me-flex-container">
+            <div class="about-me-text-1">
+                <p>Lorem ipsum dolor sit amet, eu ius dicit denique, at cum congue integre euripidis, per ei sale equidem.
+                Vix id magna primis graecis, prima ludus docendi vim ei. Ius sanctus maiestatis ut, iudico singulis pri
+                eu. Cu vidisse eleifend cotidieque mei, facer honestatis voluptatibus ei vis, vel erant tantas no.</p>
+            </div>
+            <div class="about-me-text-2">
+                <p>Lorem ipsum dolor sit amet, eu ius dicit denique, at cum congue integre euripidis, per ei sale equidem.
+                Vix id magna primis graecis, prima ludus docendi vim ei. Ius sanctus maiestatis ut, iudico singulis pri
+                eu. Cu vidisse eleifend cotidieque mei, facer honestatis voluptatibus ei vis, vel erant tantas no.</p>
+            </div> 
         </div>
+       
     </section>
 
-     <!--Projects-->
-     <section class="projects" id="projects">
+    <!--Projects-->
+    <section class="projects" id="projects">
         <h2 class="section__title section__title--projects">My Projects</h2>
 
         <!--3 columns design-->
         <div class="project-list">
             <div class='project'>
                 <h3>Space Invader Game</h3>
-                <p>This is a game that I developed to learn Python</p>
-            </div> <!--/ service-->
+                <p>Lorem ipsum dolor sit amet, eu ius dicit denique, at cum congue integre euripidis, per ei sale
+                    equidem. Vix id magna primis graecis, prima ludus docendi vim ei. Ius sanctus maiestatis ut, iudico
+                    singulis pri eu. Cu vidisse eleifend cotidieque mei, facer honestatis voluptatibus ei vis, vel erant
+                    tantas no.</p>
+            </div>
+            <!--/ project-->
 
             <div class='project'>
                 <h3>Personal Portfolio</h3>
-                <p>HTML, CSS, JavaScript</p>
-            </div> <!--/ service-->
+                <p>Lorem ipsum dolor sit amet, eu ius dicit denique, at cum congue integre euripidis, per ei sale
+                    equidem. Vix id magna primis graecis, prima ludus docendi vim ei. Ius sanctus maiestatis ut, iudico
+                    singulis pri eu. Cu vidisse eleifend cotidieque mei, facer honestatis voluptatibus ei vis, vel erant
+                    tantas no.</p>
+            </div>
+            <!--/ project-->
 
             <div class='project'>
                 <h3>TensorFlow Tutorial</h3>
-                <p>Brief introduction to Machine Learning</p>
-            </div> <!--/ service-->
-        </div> <!--/ services-->
-        <a href="https://github.com/MorisMa18" class="button">GitHub</a>
+                <p>Lorem ipsum dolor sit amet, eu ius dicit denique, at cum congue integre euripidis, per ei sale
+                    equidem. Vix id magna primis graecis, prima ludus docendi vim ei. Ius sanctus maiestatis ut, iudico
+                    singulis pri eu. Cu vidisse eleifend cotidieque mei, facer honestatis voluptatibus ei vis, vel erant
+                    tantas no.</p>
+            </div>
+            <!--/ proejct-->
+        </div>
+        <!--/ services-->
+        <a href="https://github.com/MorisMa18" target="blank" class="button">My Work</a>
     </section>
 
     <!--Work Experience-->
-    <section class="my-work" id="work_experience">
-        <h2 class="section__title">My Work Experience</h2>
-        <p class="section__subtitle"></p>
+    <section class="my-work" id="work-experience">
+        <h2 class="section__title--my-work">Work Experience</h2>
+        <!-- <p class="section__subtitle"></p> -->
 
-        <div class="Job_Descriptions">
-            <div class='job1'>
+        <div class="Job-Descriptions">
+            <div class='job'>
                 <h3>IT Support Technician @SunLife</h3>
                 <p>2019/02 ~ 2019/04</p>
-            </div> <!--/ job1-->
+            </div>
+            <!--/ job-->
 
-            <div class='job2'>
+            <div class='job'>
                 <h3>QA Engineer @MappedIn Inc.</h3>
                 <p>2019/09 ~ 2019/12</p>
-            </div> <!--/ job2-->
+            </div>
+            <!--/ job-->
 
-            <div class='job3'>
+            <div class='job'>
                 <h3>Youth Program Volunteer @SFU</h3>
                 <p>2017/07 ~ 2018/08</p>
-            </div> <!--/ job3-->
+            </div>
+            <!--/ job-->
 
-        </div> <!--/ Job_Descriptions-->
+        </div>
+        <!--/ Job_Descriptions-->
     </section>
 
     <!--Footer-->
-    <footer> 
+    <footer>
         <!--Personal Email Address-->
         <a href="mo396720@gmail.com" class="footer-link">Personal Email</a>
         <!--School Email Address-->
         <a href="wmma@uwaterloo.ca" class="footer-link">School Email</a>
         <!--LinkedIn-->
-        <a href="https://www.linkedin.com/in/morris-ma/" class="footer-link">My LinkedIn</a>
+        <a href="https://www.linkedin.com/in/morris-ma/" target="blank" class="footer-link">My LinkedIn</a>
         <!--GitHub-->
-        <a href="https://github.com/MorisMa18" class="GitHub">My GitHub</a>
+        <a href="https://github.com/MorisMa18" target="blank" class="GitHub">My GitHub</a>
     </footer>
 </body>
-</html> 
+
+</html>
