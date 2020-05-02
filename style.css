@@ -88,6 +88,31 @@ strong { font-weight: var(--fw-bold);}
     transform: scale(1.1); 
 }
 
+/* Wave animation  */
+span.wave {
+    animation-name: wave-animation;
+    animation-duration: 2.5s;
+    transform-origin: 70% 70%;
+    display: inline-block; 
+}
+
+@keyframes wave-animation {
+    0% {
+      transform: rotate(0deg); }
+    10% {
+      transform: rotate(-10deg); }
+    20% {
+      transform: rotate(12deg); }
+    30% {
+      transform: rotate(-10deg); }
+    40% {
+      transform: rotate(9deg); }
+    50% {
+      transform: rotate(0deg); }
+    100% {
+      transform: rotate(0deg); } 
+}
+
 /* Typography */ 
 h1,
 h2,
@@ -142,6 +167,7 @@ nav {display: none; }
     box-shadow: var(--bs); 
 }
 
+/* Typing animation  */
 .typewriter { 
     overflow: hidden;
     border-right: 0.1em solid black;
@@ -149,7 +175,7 @@ nav {display: none; }
     margin-right: 0 auto;  
     letter-spacing: 0.05em; 
     animation: 
-        typing 2.5s steps(25, end), 
+        typing 2s steps(25, end), 
         blink-caret 0.5s step-end infinite;
 }
 
@@ -213,10 +239,9 @@ nav {display: none; }
     .project-list {
         position: relative; 
         display: flex;
-        justify-content: center;
-        justify-content: space-evenly; 
+        justify-content: center, space-evenly;
         margin-top: 0; 
-        margin-right: 4em; 
+        margin-left: 5.15em; 
     }
 
     .project {
@@ -274,6 +299,7 @@ nav {display: none; }
 .section__title--my-work {
     color: var(--clr-accent); 
     position: relative; 
+    text-align: center;
 }
 
 .section__title--my-work::after {
@@ -284,4 +310,26 @@ nav {display: none; }
     margin: 0.5em auto 1em; 
     background: var(--clr-dark);
     opacity: 0.5; 
+}
+
+@media (min-width: 800px) {
+    .job-descriptions {
+        position: relative; 
+        display: flex;
+        justify-content: center, space-evenly; 
+        margin-top: 0; 
+        margin-left: 6.5em; 
+    }
+
+    .job {
+        display: flex; 
+        flex-direction: column;
+        width: 350px; 
+        justify-content: space-evenly, center; 
+        margin-left: 3.5em;  
+    }
+
+    .job + .job {
+        margin-left: 3em;
+    }
 }
