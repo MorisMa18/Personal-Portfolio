@@ -222,9 +222,9 @@ nav {display: none; }
     .project {
         display: flex; 
         flex-direction: column;
-        width: 300px; 
+        width: 350px; 
         justify-content: space-evenly, center; 
-        margin-left: 3.5em;  
+        margin-left: 4.5em;  
     }
 
     .project + .project {
