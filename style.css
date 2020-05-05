@@ -356,7 +356,7 @@ h3 { font-size: var(--fs-h3)};
     position: relative; 
 }
 
-/* Putting the line after About Me */ 
+/* Putting the line after About Me and Projects */ 
 .section__title--about::after, .section__title--projects::after {
     content: '';
     display: block; 
@@ -368,10 +368,11 @@ h3 { font-size: var(--fs-h3)};
 }
 
 .about-me-flex-container {
+    position: relative; 
     display: flex; 
     flex-direction: row;
     width: 700px; 
-    justify-content: center;
+    justify-content: center, space-evenly;
 }
 
 /* My work section  */
