@@ -31,6 +31,10 @@
     --bs: 0.25em 0.25em 0.75em rgba(0,0,0,0.25); 
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 /* For differnet screen size -General*/ 
 @media (min-width: 800px) {
     :root {
@@ -191,7 +195,7 @@ h3 { font-size: var(--fs-h3)};
 }
 
 /* Navigation */ 
-nav {
+.nav {
    position: fixed; 
    background: var(--clr-dark); 
    top: 0; 
@@ -226,7 +230,7 @@ nav {
     color: var(--clr-accent); 
 }
 
-.nav-open .nav {
+.nav-open .nav{
     transform: translateX(0); 
 }
 

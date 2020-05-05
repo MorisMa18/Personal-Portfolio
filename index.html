@@ -8,14 +8,14 @@
 
     <!--Can link to google font later-->
     <link rel="stylesheet" href="style.css"> 
-    <script src="index.js"></script>
+    <!-- <script src="index.js"></script> -->
 </head>
 
 <body>
     <!-- Header -->
     <header>
         <!-- HTML for animated hamburger icon -->
-        <div class="logo" onclick="trigger(this)">
+        <div class="logo" onclick="trigger()">
             <div class="bar1"></div>
             <div class="bar2"></div>
             <div class="bar3"></div>
@@ -23,32 +23,28 @@
 
         <!-- JavaScript code for animated hambuger icon -->
         <script>
-            function trigger(x) {
-                x.classList.toggle("change");
+            function trigger() {
+                document.body.classList.toggle('change');
                 document.body.classList.toggle('nav-open'); 
-                document.body.classList.toggle('no-scroll'); 
+                document.body.classList.toggle('no-scroll');
             }
         </script>
 
-        <script>
-            const navLinks = document.querySelectorAll('.nav__link');
-
-            navLinks.forEach(link => {
-                link.addEventListener('click', () => {
-                    document.body.classList.remove('no-scroll');
-                    console.log ('Pls fucking work'); 
-                    document.body.classList.remove('nav-open'); 
-                })
-            })
-        </script> 
-
         <nav class="nav">
-            <ul class="nav__list">
+            <ul class="nav__list" onclick="act()">
                 <li class="nav__item"><a href="#about" class="nav__link">About Me</a></li>
                 <li class="nav__item"><a href="#work-experience" class="nav__link">Work Experience</a></li>
                 <li class="nav__item"><a href="#projects" class="nav__link">Projects</a></li>
             </ul>
         </nav>
+
+        <script> 
+            function act() {
+                document.body.classList.remove('change');
+                document.body.classList.remove('no-scroll');
+                document.body.classList.remove('nav-open'); 
+            }
+        </script>
     </header>
 
     <!--Introduction-->
