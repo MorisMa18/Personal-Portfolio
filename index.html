@@ -7,7 +7,7 @@
     <title>Morris's Portfolio</title>
 
     <!--Can link to google font later-->
-    <link rel="stylesheet" href="style.css"> 
+    <link rel="stylesheet" href="style.css">
     <!-- <script src="index.js"></script> -->
 </head>
 
@@ -25,7 +25,7 @@
         <script>
             function trigger() {
                 document.body.classList.toggle('change');
-                document.body.classList.toggle('nav-open'); 
+                document.body.classList.toggle('nav-open');
                 document.body.classList.toggle('no-scroll');
             }
         </script>
@@ -38,11 +38,11 @@
             </ul>
         </nav>
 
-        <script> 
+        <script>
             function act() {
                 document.body.classList.remove('change');
                 document.body.classList.remove('no-scroll');
-                document.body.classList.remove('nav-open'); 
+                document.body.classList.remove('nav-open');
             }
         </script>
     </header>
@@ -132,6 +132,10 @@
         <div class="project-list">
             <div class='project'>
                 <h3>Space Invader Game</h3>
+                <div class="tags">
+                    <span class="tag-itself">Python</span>
+                    <span class="tag-itself">Pygame</span>
+                </div>
                 <p>Lorem ipsum dolor sit amet, eu ius dicit denique, at cum congue integre euripidis, per ei sale
                     equidem. Vix id magna primis graecis, prima ludus docendi vim ei. Ius sanctus maiestatis ut, iudico
                     singulis pri eu. Cu vidisse eleifend cotidieque mei, facer honestatis voluptatibus ei vis, vel erant
@@ -141,6 +145,10 @@
 
             <div class='project'>
                 <h3>Personal Portfolio</h3>
+                <div class="tags">
+                    <span class="tag-itself">HTML/CSS</span>
+                    <span class="tag-itself">JavaScript</span>
+                </div>
                 <p>Lorem ipsum dolor sit amet, eu ius dicit denique, at cum congue integre euripidis, per ei sale
                     equidem. Vix id magna primis graecis, prima ludus docendi vim ei. Ius sanctus maiestatis ut, iudico
                     singulis pri eu. Cu vidisse eleifend cotidieque mei, facer honestatis voluptatibus ei vis, vel erant
@@ -150,6 +158,9 @@
 
             <div class='project'>
                 <h3>TensorFlow Tutorial</h3>
+                <div class="tags">
+                    <span class="tag-itself">Python</span>
+                </div>
                 <p>Lorem ipsum dolor sit amet, eu ius dicit denique, at cum congue integre euripidis, per ei sale
                     equidem. Vix id magna primis graecis, prima ludus docendi vim ei. Ius sanctus maiestatis ut, iudico
                     singulis pri eu. Cu vidisse eleifend cotidieque mei, facer honestatis voluptatibus ei vis, vel erant
@@ -164,16 +175,28 @@
 
 
     <!--Footer-->
-    <footer>
-        <!--Personal Email Address-->
-        <a href="mo396720@gmail.com" class="footer-link">Personal Email</a>
-        <!--School Email Address-->
-        <a href="wmma@uwaterloo.ca" class="footer-link">School Email</a>
-        <!--LinkedIn-->
-        <a href="https://www.linkedin.com/in/morris-ma/" target="blank" class="footer-link">My LinkedIn</a>
-        <!--GitHub-->
-        <a href="https://github.com/MorisMa18" target="blank" class="GitHub">My GitHub</a>
-    </footer>
+    <div class="footer">
+        <footer>
+            <!--Personal Email Address-->
+            <span class="footer-logo">
+            <a href="mailto:mo396720@gmail.com">
+                <img src="images/email-logo.png" alt="email-logo" class="footer-icon-sizing">
+            </a></span>
+
+            <!--LinkedIn-->
+            <span class="footer-logo">
+            <a href="https://www.linkedin.com/in/morris-ma/" target="blank">
+                <img src="images/linkedin-logo.png" alt="linkedin-logo" class="footer-icon-sizing">
+            </a></span>
+
+
+            <!--GitHub-->
+            <span class="footer-logo">
+            <a href=" https://github.com/MorisMa18" target="blank">
+                <img src="images/github-logo.png" alt="github-logo" class="footer-icon-sizing">
+            </a></span>
+        </footer>
+    </div>
 </body>
 
 </html>
