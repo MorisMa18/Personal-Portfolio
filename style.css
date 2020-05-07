@@ -388,12 +388,14 @@ h3 { font-size: var(--fs-h3)};
     opacity: 0.5; 
 }
 
-.about-me-flex-container {
-    position: relative; 
-    display: flex; 
-    flex-direction: row;
-    width: 700px; 
-    justify-content: center, space-evenly;
+@media (min-width: 800px) {
+    .about-me-flex-container {
+        position: relative; 
+        display: flex; 
+        flex-direction: row;
+        width: 700px; 
+        justify-content: center, space-evenly;
+    }
 }
 
 /* My work section  */
@@ -453,6 +455,10 @@ h3 { font-size: var(--fs-h3)};
     width:30px;
     height:25px;
     border:0;
+}
+
+.footer-icon-sizing:hover {
+    transform: scale(1.1);
 }
 
 .footer-logo{
