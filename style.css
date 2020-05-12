@@ -320,20 +320,16 @@ h3 { font-size: var(--fs-h3)};
 }
 
 @media (min-width: 800px) {
-    .project-list {
-        position: relative; 
+    .project-list { 
         display: flex;
-        justify-content: center, space-evenly;
+        flex-direction: row;
+        justify-content: center;
         margin-top: 0; 
-        margin-left: 5.15em; 
     }
 
     .project {
-        display: flex; 
-        flex-direction: column;
-        width: 350px; 
-        justify-content: space-evenly, center; 
-        margin-left: 4.5em;  
+        width: 350px;   
+        text-align: center;
     }
 
     .project + .project {
@@ -393,8 +389,15 @@ h3 { font-size: var(--fs-h3)};
         position: relative; 
         display: flex; 
         flex-direction: row;
-        width: 700px; 
-        justify-content: center, space-evenly;
+        justify-content: center; 
+    }
+    .about-me-text {
+        width: 350px; 
+        text-align: center;
+    }
+
+    .about-me-text + .about-me-text {
+        margin-left: 3em;
     }
 }
 
@@ -424,17 +427,14 @@ h3 { font-size: var(--fs-h3)};
     .job-descriptions {
         position: relative; 
         display: flex;
-        justify-content: center, space-evenly; 
+        flex-direction: row;
+        justify-content: center;  
         margin-top: 0; 
-        margin-left: 6.5em; 
     }
 
     .job {
-        display: flex; 
-        flex-direction: column;
         width: 350px; 
-        justify-content: space-evenly, center; 
-        margin-left: 3.5em;  
+        text-align: center;
     }
 
     .job + .job {
