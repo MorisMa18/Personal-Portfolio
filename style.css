@@ -304,6 +304,19 @@ h3 { font-size: var(--fs-h3)};
 
     }
 }
+
+/* Experience titles  */
+.experience-title {
+    text-align: center;
+    position: relative; 
+}
+
+.job-title { 
+    color: var(--clr-accent);
+    font-weight: 600;
+    text-align: center;
+}
+
 /* My projects section */ 
 .projects { 
     background-color: var(--clr-dark);
@@ -329,7 +342,7 @@ h3 { font-size: var(--fs-h3)};
 
     .project {
         width: 350px;   
-        text-align: center;
+        text-align: start;
     }
 
     .project + .project {
@@ -393,7 +406,7 @@ h3 { font-size: var(--fs-h3)};
     }
     .about-me-text {
         width: 350px; 
-        text-align: center;
+        text-align: start;
     }
 
     .about-me-text + .about-me-text {
@@ -434,7 +447,7 @@ h3 { font-size: var(--fs-h3)};
 
     .job {
         width: 350px; 
-        text-align: center;
+        text-align: start;
     }
 
     .job + .job {
