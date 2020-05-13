@@ -4,6 +4,7 @@
     box-sizing: border-box; 
 }
 
+
 /* Custom Properties */
 
 /* General */
@@ -11,6 +12,8 @@
     /* Font */ 
     --ff-primary: 'Source Sans Pro', sans-serif;  
     --ff-secondary: 'Source Code Pro', monospace; 
+    --ff-open-sans: 'Open Sans', sans-serif;
+    --ff-montserrat: 'Montserrat', sans-serif;
 
     /* Font Weight */ 
     --fw-reg: 300; 
@@ -137,7 +140,8 @@ h3 { font-size: var(--fs-h3)};
 /* section__titles--intro - General */ 
 .section__title--intro {
     font-size: var(--fs-h1);
-    font-weight: var(--fw-reg); 
+    font-weight: var(--fw-reg);
+    font-family: var(--ff-secondary); 
 }
 
 /* section__titles--intro strong - General */
@@ -330,6 +334,7 @@ h3 { font-size: var(--fs-h3)};
 .section__title--projects {
     position: relative; 
     color: var(--clr-accent); 
+    font-family: var(--ff-open-sans); 
 }
 
 @media (min-width: 800px) {
@@ -343,6 +348,8 @@ h3 { font-size: var(--fs-h3)};
     .project {
         width: 350px;   
         text-align: start;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 500;
     }
 
     .project + .project {
@@ -384,6 +391,7 @@ h3 { font-size: var(--fs-h3)};
 .section__title--about {
     color: var(--clr-accent); 
     position: relative; 
+    font-family: var(--ff-open-sans);
 }
 
 /* Putting the line after About Me and Projects */ 
@@ -407,6 +415,8 @@ h3 { font-size: var(--fs-h3)};
     .about-me-text {
         width: 350px; 
         text-align: start;
+        font-family: var(--ff-montserrat); 
+        font-weight: 500;
     }
 
     .about-me-text + .about-me-text {
@@ -424,6 +434,7 @@ h3 { font-size: var(--fs-h3)};
     color: var(--clr-accent); 
     position: relative; 
     text-align: center;
+    font-family: var(--ff-open-sans);
 }
 
 .section__title--my-work::after {
@@ -448,6 +459,8 @@ h3 { font-size: var(--fs-h3)};
     .job {
         width: 350px; 
         text-align: start;
+        font-family: var(--ff-montserrat);
+        font-weight: 500;
     }
 
     .job + .job {
